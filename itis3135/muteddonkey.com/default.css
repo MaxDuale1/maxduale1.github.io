@@ -1,0 +1,80 @@
+body{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: khaki;
+    font-family: monospace;
+}
+
+a {
+    color: beige;
+    text-decoration: none;
+}
+
+a:hover{
+    color: burlywood;
+}
+
+main{
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    .custom-bullets {
+        list-style-type: "🐴 "; /* Example custom bullet */
+    }
+    
+    
+    
+}
+
+main p{
+    font-size: 150%;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 200%;
+}
+
+main ul{
+    font-size: 150%;
+}
+
+
+figure{
+    text-align: center;
+}
+
+.hero {
+    background: url(images/donkey.jpeg) no-repeat center center fixed;
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #F5F5F5;
+    font-size: 36px;
+    font-weight: bold;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    font-size: 30px; 
+    color: #e6c687; 
+    font-weight: bold; 
+    text-align: center; 
+    padding: 10px; 
+}
+
+header p{
+    font-family: cursive;
+    font-style: italic;
+    color: burlywood;
+    
+}
