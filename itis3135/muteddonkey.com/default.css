@@ -1,4 +1,4 @@
-body{
+body {
     background-color: rgb(0, 0, 0);
     text-align: center;
     color: khaki;
@@ -10,41 +10,44 @@ a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     color: burlywood;
 }
 
-main{
+main {
     text-align: left;
     margin-left: 20%;
     margin-right: 20%;
-    .custom-bullets {
-        list-style-type: "🐴 "; /* Example custom bullet */
-    }
-    
-    
-    
 }
 
-main p{
+/* Moved .custom-bullets outside main and fixed the list-style */
+.custom-bullets {
+    list-style: none; /* Removes default bullets */
+    padding-left: 0;
+}
+
+.custom-bullets li::before {
+    content: "🐴 "; /* Adds horse emoji before each list item */
+}
+
+main p {
     font-size: 150%;
 }
 
-h2{
+h2 {
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
     font-size: 200%;
 }
 
-main ul{
+main ul {
     font-size: 150%;
 }
 
-
-figure{
+figure {
     text-align: center;
 }
 
@@ -65,16 +68,16 @@ figure{
 }
 
 h1 {
-    font-size: 30px; 
-    color: #e6c687; 
-    font-weight: bold; 
-    text-align: center; 
-    padding: 10px; 
+    font-size: 30px;
+    color: #e6c687;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
 }
 
-header p{
+header p {
     font-family: cursive;
     font-style: italic;
     color: burlywood;
-    
 }
+
