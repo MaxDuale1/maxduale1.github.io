@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables | Max Duale | ITIS 3135</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+
+        thead tr {
+            background-color: #333;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #ddd;
+        }
+
+        tfoot th {
+            background-color: #444;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>HTML Tables</h2>
+
+        <h3>My Tabular Data</h3>
+        <ol>
+            <li>Donkey McSnitch - donkeymcsnitch@muteddonkey.com - 5 years</li>
+            <li>Detective Burro - burrodetective@muteddonkey.com - 12 years</li>
+            <li>Shrek Ogreman - sogreman@swamplawyers.net - 8 years</li>
+            <li>Fiona Truthbender - fiona@muteddonkey.com - 6 years</li>
+            <li>Puss Whiskerlaw - puss@muteddonkey.com - 15 years</li>
+            <li>Gingy Snapson - gingy@gumdropdefense.com - 3 years</li>
+            <li>Lord Farquaad - farquaad@highcastlelegal.com - 1 year</li>
+        </ol>
+
+        <h3>Employee Data in Simple Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Years of Service</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Donkey McSnitch</td><td>donkeymcsnitch@muteddonkey.com</td><td>5</td></tr>
+                <tr><td>Detective Burro</td><td>burrodetective@muteddonkey.com</td><td>12</td></tr>
+                <tr><td>Shrek Ogreman</td><td>sogreman@swamplawyers.net</td><td>8</td></tr>
+                <tr><td>Fiona Truthbender</td><td>fiona@muteddonkey.com</td><td>6</td></tr>
+                <tr><td>Puss Whiskerlaw</td><td>puss@muteddonkey.com</td><td>15</td></tr>
+                <tr><td>Gingy Snapson</td><td>gingy@gumdropdefense.com</td><td>3</td></tr>
+                <tr><td>Lord Farquaad</td><td>farquaad@highcastlelegal.com</td><td>1</td></tr>
+            </tbody>
+        </table>
+
+        <h3>Employee Data in Complex Table</h3>
+        <figure>
+            <figcaption>Muted Donkey Productions Employee Info</figcaption>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Division</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Years of Service</th>
+                        <th>Monthly Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Surveillance</td>
+                        <td id="name1">Donkey McSnitch</td>
+                        <td headers="name1">donkeymcsnitch@muteddonkey.com</td>
+                        <td headers="name1">5</td>
+                        <td headers="name1">$3,000</td>
+                    </tr>
+                    <tr>
+                        <td id="name2">Detective Burro</td>
+                        <td headers="name2">burrodetective@muteddonkey.com</td>
+                        <td headers="name2">12</td>
+                        <td headers="name2">$5,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Client Relations</td>
+                        <td id="name3">Shrek Ogreman</td>
+                        <td headers="name3">sogreman@swamplawyers.net</td>
+                        <td headers="name3">8</td>
+                        <td headers="name3">$4,200</td>
+                    </tr>
+                    <tr>
+                        <td id="name4">Fiona Truthbender</td>
+                        <td headers="name4">fiona@muteddonkey.com</td>
+                        <td headers="name4">6</td>
+                        <td headers="name4">$4,500</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Legal Defense</td>
+                        <td id="name5">Puss Whiskerlaw</td>
+                        <td headers="name5">puss@muteddonkey.com</td>
+                        <td headers="name5">15</td>
+                        <td headers="name5">$6,000</td>
+                    </tr>
+                    <tr>
+                        <td id="name6">Gingy Snapson</td>
+                        <td headers="name6">gingy@gumdropdefense.com</td>
+                        <td headers="name6">3</td>
+                        <td headers="name6">$2,500</td>
+                    </tr>
+                    <tr>
+                        <td id="name7">Lord Farquaad</td>
+                        <td headers="name7">farquaad@highcastlelegal.com</td>
+                        <td headers="name7">1</td>
+                        <td headers="name7">$7,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="3">Total Years of Service</th>
+                        <td>50</td>
+                        <td>$32,200</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </figure>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+        document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>
