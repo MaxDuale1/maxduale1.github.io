@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYO Intro | Max Duale | ITIS 3135</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header>
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main>
+        <h2>BYO Intro</h2>
+        <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+        
+        <form id="introForm">
+            <label for="name">Name:</label>
+<input type="text" id="name" value="Max Duale" required><br><br>
+
+<label for="mascot">Mascot:</label>
+<input type="text" id="mascot" value="Detective Donkey" required><br><br>
+
+<label for="image">Image (JPG or PNG):</label>
+<input type="file" id="image" accept="image/png, image/jpeg" required><br><br>
+
+<label for="caption">Image Caption:</label>
+<input type="text" id="caption" value="The face of truth... or lies." required><br><br>
+
+<label for="personal">Personal Background:</label>
+<input type="text" id="personal" value="Born in the chaos, molded by memes." required><br><br>
+
+<label for="professional">Professional Background:</label>
+<input type="text" id="professional" value="Founder of Muted Donkey Productions." required><br><br>
+
+<label for="academic">Academic Background:</label>
+<input type="text" id="academic" value="CS Major @ UNCC. Almost out." required><br><br>
+
+<label for="web">Background in Web Development:</label>
+<input type="text" id="web" value="A couple classes, lots of caffeine." required><br><br>
+
+<label for="platform">Primary Computer Platform:</label>
+<input type="text" id="platform" value="Windows with dual monitors." required><br><br>
+
+<div id="coursesContainer">
+    <label>Courses Currently Taking:</label><br>
+    <button type="button" onclick="addCourse()">Add Course</button>
+</div>
+<br>
+
+<label for="funny">Funny thing?:</label>
+<input type="text" id="funny" value="I once debugged a bug that wasn’t there."><br><br>
+
+<label for="else">Anything else?</label>
+<input type="text" id="else" value="Still waiting for my donkey to talk."><br><br>
+
+<label for="agree">
+    <input type="checkbox" id="agree" required>
+    I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.
+</label>
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+        </form>
+
+        <div id="result"></div>
+    </main>
+
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+
+    <script src="scripts/HTMLInclude.min.js"></script>
+    <script src="scripts/survey.js" defer></script>
+</body>
+</html>
