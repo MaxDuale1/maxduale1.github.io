@@ -1,0 +1,144 @@
+.about-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+
+  body{
+    color: chocolate;
+    background-color: bisque;
+  }
+
+  .gallery-section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .gallery figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .gallery img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  .gallery figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+    color: #444;
+  }
+
+  .services-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .accordion {
+    margin-top: 2rem;
+    text-align: left;
+  }
+  
+  .accordion-btn {
+    background-color: #cd853f;
+    color: white;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-btn:hover {
+    background-color: #a0522d;
+  }
+  
+  .accordion-panel {
+    padding: 1rem;
+    background-color: #fdf1e7;
+    display: none;
+    border: 1px solid #e0cfc2;
+  }
+  
+  .accordion-panel p {
+    margin: 0.5rem 0;
+  }
+
+  .contact-section {
+    max-width: 700px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
+  .contact-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-section input[type="text"],
+  .contact-section input[type="email"],
+  .contact-section textarea {
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  
+  .contact-section input[type="submit"],
+  .contact-section input[type="reset"] {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .contact-section input[type="submit"]:hover,
+  .contact-section input[type="reset"]:hover {
+    background-color: saddlebrown;
+  }
+  
+  .thank-you-msg {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+  }
+  
+  
+  
+
+  
+
+
+  
