@@ -4,6 +4,7 @@ body {
     text-align: center;
     color:black;
     font-family: monospace;
+    font-size: large;
 }
 
 a {
@@ -21,6 +22,7 @@ main {
     width: 90%; 
     margin: 0 auto; 
     text-align: left;
+    font-size: large;
 }
 
 
@@ -70,4 +72,16 @@ p {
         flex-direction: column;
         text-align: center;
     }
+}
+
+.site-map-img {
+    width: 30%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption{
+    font-size: x-large;
 }
