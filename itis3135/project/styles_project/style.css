@@ -134,6 +134,15 @@
     color: green;
     font-weight: bold;
   }
+
+  .back-home {
+    display: inline-block;
+    margin-top: 1rem;
+    color: chocolate;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
   
   
   
