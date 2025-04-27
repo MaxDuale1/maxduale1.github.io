@@ -91,7 +91,12 @@ header {
   font-weight: 700;
   transition: background .3s;
 }
-.btn:hover { background: darken(var(--clr-primary),10%); }
+
+.btn:hover,
+.contact-section button:hover {
+  filter: brightness(0.9);
+}
+
 
 
 .about-section {
