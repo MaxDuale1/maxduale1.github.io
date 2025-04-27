@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery | Ahmed Shire Photography</title>
-  <link rel="stylesheet" href="styles_project/style.css" />
+  <link rel="stylesheet" href="styles_project/style.css"/>
 </head>
 <body>
   <header>
-    <div data-include="components/header.html"></div>
+    <nav>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="review.html">Review 1</a></li>
+        <li><a href="review.html">Review2</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="gallery-section">
     <h2>Photo Gallery</h2>
-    <p>Browse through Ahmed Shires photography across portraits, events, and street life.</p>
-
+    <p>Browse through Ahmed Shire’s portraits, events, and street life.</p>
     <section class="gallery">
       <figure>
         <img src="images_project/image1.JPG" alt="Brownstone, Paris France" />
-        <figcaption>Portrait: Natural Light Session</figcaption>
+        <figcaption>Portrait: Natural Light</figcaption>
       </figure>
       <figure>
-        <img src="images_project/image2.JPG" alt="Lourve Muesem, Paris France" />
-        <figcaption>Event: London Wedding 2024</figcaption>
+        <img src="images_project/image2.JPG" alt="Louvre Museum, Paris France" />
+        <figcaption>Event: London Wedding</figcaption>
       </figure>
       <figure>
-        <img src="images_project/image3.JPG" alt="Hammersmith, Londond England" />
-        <figcaption>Street: Night Walk in Soho</figcaption>
+        <img src="images_project/image3.JPG" alt="Hammersmith, London England" />
+        <figcaption>Street: Night in Soho</figcaption>
       </figure>
       <figure>
-        <img src="images_project/image4.JPG" alt="Lourve Musem, Paris France" />
-        <figcaption>Landscape: City at Golden Hour</figcaption>
+        <img src="images_project/image4.JPG" alt="City at Golden Hour" />
+        <figcaption>Landscape: Golden Hour</figcaption>
       </figure>
     </section>
   </main>
 
   <footer>
-    <div data-include="components/footer.html"></div>
-    <p><a href="index.html" class="back-home">← Back to Home</a></p>
-
+    <p style="padding:2rem 1rem;">← <a href="index.html">Back to Home</a></p>
+    <p>Page built by <a href="muteddonkey.com/index.html">Muted Donkey Productions</a> &copy; 2025</p>
   </footer>
-
-  <script src="scripts/HTMLInclude.min.js"></script>
-  <script src="scripts_project/pscripts.js"></script>
 </body>
 </html>
