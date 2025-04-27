@@ -38,6 +38,20 @@
     <p style="padding:2rem 1rem;">← <a href="index.html">Back to Home</a></p>
     <p>Page built by <a href="muteddonkey.com/index.html">Muted Donkey Productions</a> &copy; 2025</p>
   </footer>
+  <footer>
+    <div data-include="../components/footer.html"></div>
+  </footer>
+  
+  <script>
+    // point the validator links at this page’s URL
+    document.getElementById("validation_link_html")
+      .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css")
+      .setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+  <script src="../scripts/HTMLInclude.min.js"></script>
+  
+
 </body>
 </html>
 
