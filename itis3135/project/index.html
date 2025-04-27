@@ -37,9 +37,23 @@
     <p>© 2025 Ahmed Shire Photography | 
       <a href="https://validator.w3.org/">HTML</a> | 
       <a href="https://jigsaw.w3.org/css-validator/">CSS</a>
+      <a href="../">Course page</a>
       
     </p>
     <p>Page built by <a href="muteddonkey.com/index.html">Muted Donkey Productions</a> &copy; 2025</p>
   </footer>
+  <footer>
+    <div data-include="../components/footer.html"></div>
+  </footer>
+  
+  <script>
+    
+    document.getElementById("validation_link_html")
+      .setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css")
+      .setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+  <script src="../scripts/HTMLInclude.min.js"></script>
+  
 </body>
 </html>
