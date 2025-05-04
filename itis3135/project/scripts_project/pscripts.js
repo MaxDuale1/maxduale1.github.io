@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
   /*** ACCORDION (services.html) ***/
   document.querySelectorAll(".accordion-btn").forEach(btn => {
     btn.addEventListener("click", () => {
-      // close all panels
+      
       document.querySelectorAll(".accordion-panel")
         .forEach(p => p.style.display = "none");
-      // toggle current
+      
       const panel = btn.nextElementSibling;
       if (panel.style.display !== "block") {
         panel.style.display = "block";
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /*** SLIDESHOW (index.html) ***/
+  
   const slides = [
     "images_project/image1.JPG",
     "images_project/image2.JPG",
@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
   lbClose.addEventListener("click", () => {
     lightbox.style.display = "none";
   });
-  // also close if clicking outside the image
+  
   lightbox.addEventListener("click", e => {
     if (e.target === lightbox) lightbox.style.display = "none";
   });
 
-  /*** OPTIONAL: CONTACT FORM (contact.html) ***/
+  
   const contactForm = document.getElementById("contactForm");
   const response = document.getElementById("formResponse");
   if (contactForm) {
