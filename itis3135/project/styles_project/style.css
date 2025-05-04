@@ -215,7 +215,7 @@ header {
   font-weight: 500;
 }
 .contact-section button:hover {
-  background: darken(var(--clr-primary),10%);
+  background: black;
 }
 
 
